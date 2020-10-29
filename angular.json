@@ -28,7 +28,9 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.less"
+              "src/styles.less",
+              "node_modules/bootstrap/dist/css/bootstrap.min.css"
+
             ],
             "scripts": []
           },
@@ -123,6 +125,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "TestDemo"
+    }
+  },
+  "defaultProject": "TestDemo",
+  "cli": {
+    "analytics": "ca4782db-3c56-4a2a-a831-6c521b8dcb87"
+  }
 }
