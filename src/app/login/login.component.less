@@ -5,13 +5,12 @@ input[type=text], input[type=password] {
     padding: 12px 20px;
     margin: 8px 0;
     display: inline-block;
-    border: 1px solid #ccc;
     box-sizing: border-box;
   }
   
   /* Set a style for all buttons */
   button {
-    background-color: #4CAF50;
+    background-color: burlywood;
     color: white;
     padding: 14px 20px;
     margin: 8px 0;
@@ -55,6 +54,13 @@ input[type=text], input[type=password] {
     padding-top: 16px;
   }
   
+ input.ng-invalid.ng-touched{
+   border:2px solid red;
+ }
+
+ .inputerror{
+color: red;
+ }
   /* Change styles for span and cancel button on extra small screens */
   @media screen and (max-width: 300px) {
     span.psw {

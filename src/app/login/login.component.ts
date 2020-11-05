@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { NgForm } from '@angular/forms';
 import { Router } from '@angular/router';
 import { LoginService } from '../login.service';
 
@@ -17,7 +18,7 @@ export class LoginComponent implements OnInit {
   error=false;
 
   constructor(
-    private loginService: LoginService, 
+    private loginService: LoginService,    
     private route: Router) { }
 
   ngOnInit(): void {
@@ -29,6 +30,7 @@ export class LoginComponent implements OnInit {
     this.model.Password = password;
 
     this.loginService.Login(this.model).subscribe(
+
       data => {
         debugger;
         if (data === "Success") {
@@ -40,6 +42,19 @@ export class LoginComponent implements OnInit {
       });
 
 
+  }
+
+
+
+  // onSubmit(form:NgForm){
+  //   console.log(form);
+
+
+  // }
+
+  onSubmit(data){
+    debugger;
+    console.log(data.uname);    
   }
 
 }
